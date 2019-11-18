@@ -10,6 +10,7 @@ import java.awt.image.BufferStrategy;
 import javax.swing.JFrame;
 
 import graphics.Assets;
+import stados.JuegoEtados;
 
 public class Window extends JFrame implements Runnable{
 	
@@ -25,6 +26,8 @@ public class Window extends JFrame implements Runnable{
 	private double TARGETTIME = 1000000000/FPS;
 	private double delta = 0;
 	private int AVERAGEFPS = FPS;
+        
+        private JuegoEtados juegoEstado;
 	
 	public Window()
 	{
@@ -86,6 +89,7 @@ public class Window extends JFrame implements Runnable{
 	private void init()
 	{
 		Assets.init();
+                juegoEstado=new JuegoEtados();
 	}
 	
 	

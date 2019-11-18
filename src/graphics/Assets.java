@@ -18,7 +18,7 @@ public class Assets {
 	
 	public static void init()
 	{
-		player = Loader.ImageLoader("C:/Users/copad/Documents/NetBeansProjects/NavesSpaciales/src/res/player.png");
+		player = Loader.ImageLoader("C:/Users/copad/Documents/NetBeansProjects/NavesSpaciales/src/res/folder/player.png");
 	}
 	
 
