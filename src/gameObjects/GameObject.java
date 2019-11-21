@@ -5,7 +5,9 @@
  */
 package gameObjects;
 
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
+import math.Vector2D;
 
 /**
  *
@@ -13,4 +15,27 @@ import java.awt.image.BufferedImage;
  */
 public abstract class GameObject {
     protected BufferedImage texture;
+    protected Vector2D position;
+    
+    public GameObject(Vector2D position,BufferedImage textura){
+        this.position=position;
+        this.texture=textura;
+    }
+    
+    public abstract void update();
+
+    /**
+     *
+     * @param g
+     */
+    public abstract void draw(Graphics g);
+
+    public Vector2D getPosition() {
+        return position;
+    }
+
+    public void setPosition(Vector2D position) {
+        this.position = position;
+    }
+    
 }
