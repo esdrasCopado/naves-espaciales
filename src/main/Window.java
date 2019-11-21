@@ -57,7 +57,7 @@ public class Window extends JFrame implements Runnable{
 	
 	
 	private void update(){
-		
+		juegoEstado.update();
 	}
 
 	private void draw(){
@@ -77,7 +77,8 @@ public class Window extends JFrame implements Runnable{
 		
 		g.fillRect(0, 0, WIDTH, HEIGHT);
 		
-		g.drawImage(Assets.player, 350, 300, null);
+//		juegoEstado.draw(g);
+                g.drawImage(Assets.player, 350, 300, this);
 		
 		g.drawString(""+AVERAGEFPS, 10, 20);
 		

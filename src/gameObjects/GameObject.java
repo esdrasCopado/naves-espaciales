@@ -3,25 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package graphics;
+package gameObjects;
+
 import java.awt.image.BufferedImage;
-import graphics.*;
+
 /**
  *
  * @author copad
  */
-public class Assets {
-    
-
-
-	
-	public static BufferedImage player;
-	
-	public static void init()
-	{
-            
-		Assets assets=new Assets();
-	}
-	
-
+public abstract class GameObject {
+    protected BufferedImage texture;
 }
